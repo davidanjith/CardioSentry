@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import pickle
 import numpy as np
-from scipy.interpolate import interp1d
+from scipy.signal import resample
 
 # File Paths
 data_dir = r"C:\Users\David\PycharmProjects\CardioSentry\data_processing\PPG_DaLiA\PPG_FieldStudy"
