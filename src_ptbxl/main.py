@@ -9,7 +9,10 @@ from train.trainer import train_model
 from data.loader import load_and_split_data
 from utilities.gradcam import visualize_gradcam
 from utilities.ecg_by_condition import get_ecg_by_condition
+from utilities.model_eval import evaluate_model
 from config import MODEL_SAVE_PATH
+
+
 
 def main():
     # 1. Load or train models
@@ -73,6 +76,9 @@ def main():
         fig.savefig('./plots/random_test_ecg.png', dpi=300)
         plt.close(fig)
         print("Saved visualization to random_test_ecg.png")
+
+    # 5. Evaluate on full test set and save metrics + plots
+    evaluate_model(model, test_dataset)
 
 if __name__ == "__main__":
     main()

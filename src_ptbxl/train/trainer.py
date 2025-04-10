@@ -6,6 +6,8 @@ from torch.cuda.amp import GradScaler, autocast
 from src_ptbxl.config  import BATCH_SIZE, EPOCHS, MODEL_SAVE_PATH
 from  src_ptbxl.data.loader import load_and_split_data
 from src_ptbxl.models.transformer import ECGTransformerModel
+import numpy as np
+
 
 import warnings
 warnings.filterwarnings('ignore')
