@@ -35,7 +35,7 @@ python main.py
 
 **ECG Grad-CAM visualization for Myocardial Infarction:**
 
-![MI ECG]([dataplots/mi_ecg_analysis.png](https://github.com/davidanjith/CardioSentry))
+![MI ECG sample](src_ptbxl/plots/mi_ecg_analysis.png)
 
 ---
 
